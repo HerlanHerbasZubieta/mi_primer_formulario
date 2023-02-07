@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    z-index: 1;
+    position: relative;
+    padding-top: 35px;
+    
+    
+}
+.contenido1 label input{
+    display: block;
+    padding-top: 20px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+.contenido1{
+    border: 1px solid red;
+    padding: 35px;
+    background-color: rgb(219, 203, 201);
+    width: 550px;
+    min-height: 350px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.inputs{
+   width: 100%;
+   border-radius: 7px;
+   background-color: rgb(240, 219, 105);
+   border: none;
+   padding: 10px;
+}
+
+
+.enviar{
+   margin-left: 32%;
+   padding: 25px;
+   margin-top: 30px;
+   border-radius: 10px;
+   border: none;
+   width: 170px;
+   cursor: pointer;
+   background-color: rgb(213, 235, 94);
+   color: rgb(65, 63, 63);
+}
+.enviar:hover{
+    transition: 1.5;
+    background-color: rgb(188, 247, 129);
+    transform: scale(1.1);
+}
+
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <form method="GET" class="form" onsubmit=" return validacion()">
+        <div class="contenido1">
+          <h1>INSCRIBETE AHORA</h1>
+
+          <label
+            >Introduce tu Nombre:
+            <input
+              type="text"
+              name="nombre"
+              class="inputs"
+              placeholder="Nombre"
+              id="nombre"
+          /></label>
+          <label
+            >Introduce tu Apellido:
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              class="inputs"
+              placeholder="Apellido"
+          /></label>
+          <label
+            >Introduce tu Correo:
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="inputs"
+              placeholder="Richi@gmail.com"
+          /></label>
+          <label
+            >Introduce tu telefono:
+            <input
+              type="text"
+              id="numero"
+              name="number"
+              class="inputs"
+              maxlength="8"
+              placeholder="Telefono"
+          /></label>
+          <label
+            >Introduce tu Contraseña:
+            <input
+              type="text"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="inputs"
+          /></label>
+
+          <input
+            type="submit"
+            id="enviar"
+            name="enviar"
+            class="enviar"
+            value="Enviar"
+          />
+        </div>
+      </form>
+
+      <video src="Network - 45961.mp4" muted autoplay loop></video>
+
+      <div class="capa"></div>
+    </div>
+
+    <div class="container">
+      <div class="contenido">
+        <div class="loader"></div>
+        <span class="alinearCont">
+          <p class="p1">Cargando...</p>
+        </span>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

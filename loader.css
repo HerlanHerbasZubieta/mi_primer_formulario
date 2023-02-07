@@ -1,0 +1,74 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-height: 180vh;
+    position: fixed;
+    background-color: rgb(27, 25, 25);
+    top: 0;
+    left: 0;
+    z-index: 2;
+ 
+}
+.contenido{
+    margin-top: 16%;
+    
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border: 5px solid blueviolet;
+    border-radius: 50%;
+    position: relative;
+    border-top: 4px solid crimson;
+    animation: loader 2s linear infinite ;
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+        opacity: .2;
+    }
+    25%{
+        opacity: .4;
+    }
+    50%{
+        opacity: .6;
+    }
+    75%{
+        opacity: .8;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.p1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+   
+}
+.alinearCont{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    margin-top:-8.8%;
+    margin-left: 2.5%;
+    animation: contenido 2s alternate infinite ease-in-out;
+}
+@keyframes contenido {
+    0%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .1;
+    }
+}
+.cerrarCargador{
+    transform: translate(-100%);
+    transition: all 0.5s;
+}
